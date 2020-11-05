@@ -1,3 +1,0 @@
-flask
-sql_alchemy
-pymysql
