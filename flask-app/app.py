@@ -5,7 +5,7 @@ from os import getenv
 app = Flask(__name__)
 db = SQLAlchemy(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = str(getenv('DATABASE_URI))
+app.config['SQLALCHEMY_DATABASE_URI'] = str(getenv('DATABASE_URI'))
 
 class Users(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
